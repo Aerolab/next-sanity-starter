@@ -9,18 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/client": "^5.2.2",
+    "@sanity/image-url": "^1.0.2",
+    "groq": "^3.5.1",
     "next": "^13.1.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "ui": "*"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
-    "eslint": "7.32.0",
-    "tsconfig": "*",
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
+    "eslint": "7.32.0",
+    "tsconfig": "*",
     "typescript": "^4.5.3"
   }
 }

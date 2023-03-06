@@ -7,12 +7,12 @@ export default defineType({
   fields: [
     {
       name: 'title',
-      type: 'string',
+      type: 'localeString',
       title: 'Title',
     },
     {
       name: 'description',
-      type: 'text',
+      type: 'localeText',
       title: 'Description',
     },
   ],
