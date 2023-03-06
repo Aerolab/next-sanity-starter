@@ -6,7 +6,7 @@ const Layout: FC<{ children: React.ReactNode }> = ({ children }) => {
   const router = useRouter();
 
   const handleChange = (e: React.ChangeEvent<{ value: string }>) => {
-    router.push(router.pathname, router.pathname, {
+    router.push(router.pathname, router.asPath, {
       locale: e.target.value
     });
   };
