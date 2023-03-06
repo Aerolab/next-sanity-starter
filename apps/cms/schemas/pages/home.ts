@@ -9,11 +9,13 @@ export default defineType({
       name: 'title',
       type: 'localeString',
       title: 'Title',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'description',
       type: 'localeText',
       title: 'Description',
+      validation: (Rule) => Rule.required(),
     },
   ],
   preview: {

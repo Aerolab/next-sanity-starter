@@ -9,6 +9,7 @@ export default defineType({
       name: 'title',
       type: 'localeString',
       title: 'Title',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'image',
