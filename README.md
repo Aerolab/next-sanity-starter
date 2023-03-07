@@ -34,7 +34,7 @@ The [cms app](./apps/cms/) has a desk structure so that each schema within of [s
 
 ## Localization
 
-Este starter tiene una configuracion inicial para manejar la internalization dentro de cada `app`
+This starter has a config for manage the localization within each `app`
 
 ### Sanity
 
