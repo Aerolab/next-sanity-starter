@@ -26,6 +26,33 @@ This starter has some additional tools already setup for you:
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
 
+## Getting Started
+Clone and install dependencies
+```
+npm i
+```
+
+### Sanity Setup
+
+Let's setup `sanity` project
+```
+npm create sanity@latest
+```
+Here create a new project, and use the default dataset configuration.
+
+Next in the project output path kill the process with `ctrl + c`
+
+Go to [Sanity Manage](https://www.sanity.io/manage/) open the project and copy the `projectId`
+
+Copy the [`.env.template`](./.env.template) in a new `.env` file in the root project and put the `projectId` as a value for 
+- `NEXT_PUBLIC_SANITY_PROJECT_ID`
+- `SANITY_STUDIO_PROJECT_ID`
+
+Now create a staging dataset using
+```bash
+cd apps/cms
+npx sanity dataset create staging
+```
 
 ## Sanity Schemas
 ### Pages
