@@ -9,6 +9,8 @@
   "scripts": {
     "build": "dotenv -- turbo run build",
     "dev": "dotenv -- turbo run dev",
+    "dev:cms": "dotenv -- turbo run dev --filter=cms",
+    "dev:web": "dotenv -- turbo run dev --filter=web",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
