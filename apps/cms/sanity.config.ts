@@ -6,6 +6,7 @@ import {deskStructure} from './lib/deskStructure'
 import {i18nFields} from './schemas/i18n/fields'
 import {languageFilter} from '@sanity/language-filter'
 import {supportedLanguages, baseLanguage} from './schemas/i18n/lang'
+import {projectId, dataset} from './env'
 
 export const sharedConfig = definePlugin({
   name: 'sharedConfig',
@@ -32,8 +33,8 @@ export default defineConfig([
     name: 'default',
     title: 'Aero Sanity Starter Production',
     basePath: '/prod',
-    projectId: 'pp4gekcd',
-    dataset: 'production',
+    projectId,
+    dataset,
     plugins: [sharedConfig()],
   },
   {
@@ -42,7 +43,7 @@ export default defineConfig([
     basePath: '/staging',
 
     dataset: 'staging',
-    projectId: 'pp4gekcd',
+    projectId,
 
     plugins: [sharedConfig()],
   },
