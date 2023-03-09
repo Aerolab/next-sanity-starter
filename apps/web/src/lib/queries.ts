@@ -1,4 +1,4 @@
-import groq from 'groq';
+import { groq } from 'next-sanity';
 
 export const getHomePageQuery = groq`
   *[_id == "home"][0] {
