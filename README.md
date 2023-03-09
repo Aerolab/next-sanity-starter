@@ -4,7 +4,7 @@ Starter to get going with Next.js and Sanity.
 
 ## Features
 - Field Level Translation
-- Pages Singletons
+- Pages Singletons (each page as a single content type)
 
 ## What's inside? 👀
 
