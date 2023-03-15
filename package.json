@@ -1,0 +1,28 @@
+{
+  "name": "nextjs-sanity-starter",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "dotenv -- turbo run build",
+    "dev": "dotenv -- turbo run dev",
+    "dev:cms": "dotenv -- turbo run dev --filter=cms",
+    "dev:web": "dotenv -- turbo run dev --filter=web",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "latest",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "dotenv-cli": "^7.0.0"
+  },
+  "packageManager": "npm@8.11.0"
+}

@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "sanity-io.vscode-sanity",
+    "folke.vscode-monorepo-workspace",
+    "esbenp.prettier-vscode"
+  ]
+}
